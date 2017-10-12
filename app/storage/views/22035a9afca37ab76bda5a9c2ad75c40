@@ -1,0 +1,52 @@
+<?php $__env->startSection('breadcrumbs'); ?>
+<?php echo Helper::breadcrumbs('Information', 'Sessions'); ?>
+
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('left_side'); ?>
+<?php echo Helper::left_side('Information', 'Sessions'); ?>
+
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+
+<div id="sessions_table"></div>
+
+
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('pr-css'); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('pr-scripts'); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('scripts'); ?>
+<script type="text/javascript">
+
+$.ajax({ 
+	type: 'POST',
+	url: '<?php echo URL::route('sessions'); ?>',
+	data : 
+	{
+		'ajax_action'               : 'get_sessions'
+	},
+	beforeSend: function(request) {
+		return request.setRequestHeader("X-CSRF-Token", $("meta[name='token']").attr('content'));
+	},
+	success: function(msg)
+	{
+		if (msg.success != undefined) {
+			$.each(msg.errors, function(index, error) {
+				$.smallBox({
+					title : "Token Mismatch",
+					content : "<i class='fa fa-clock-o'></i> <i>Please refresh the page.</i>",
+					color : "#C46A69",
+					iconSmall : "fa fa-times fa-2x bounce animated",
+					timeout : 4000
+				});
+			});
+		} else {
+			$('#sessions_table').show().html(msg);
+		}
+	}
+});
+
+</script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('templates.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

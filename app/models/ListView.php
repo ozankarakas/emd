@@ -1,0 +1,1 @@
+<?php class ListView extends \Eloquent{	protected $connection = 'helper_db';	protected $table = "btt_list_view";	protected $primaryKey = 'schedule_id';	protected $fillable = array('schedule_id', 'lc_id', 'facility_id', 'data', 'added_by');	public $timestamps = false;}

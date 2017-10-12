@@ -1,0 +1,7 @@
+[18-Mar-2015 16:52:55 UTC] PHP Fatal error:  Class 'PHPParser_Lexer' not found in /home/global/public_html/asa/vendor/nikic/php-parser/lib/PHPParser/Lexer/Emulative.php on line 7
+[22-Mar-2015 02:15:49 UTC] PHP Fatal error:  Class 'PHPParser_Lexer' not found in /home/global/public_html/asa/vendor/nikic/php-parser/lib/PHPParser/Lexer/Emulative.php on line 7
+[22-Mar-2015 03:32:10 UTC] PHP Fatal error:  Class 'PHPParser_Lexer' not found in /home/global/public_html/asa/vendor/nikic/php-parser/lib/PHPParser/Lexer/Emulative.php on line 7
+[26-Mar-2015 18:21:23 UTC] PHP Fatal error:  Class 'PHPParser_Lexer' not found in /home/global/public_html/asa/vendor/nikic/php-parser/lib/PHPParser/Lexer/Emulative.php on line 7
+[16-Jun-2015 02:21:44 UTC] PHP Fatal error:  Class 'PHPParser_Lexer' not found in /home/global/public_html/asa/vendor/nikic/php-parser/lib/PHPParser/Lexer/Emulative.php on line 7
+[16-Jun-2015 09:03:19 UTC] PHP Fatal error:  Class 'PHPParser_Lexer' not found in /home/global/public_html/asa/vendor/nikic/php-parser/lib/PHPParser/Lexer/Emulative.php on line 7
+[04-Sep-2015 14:08:18 UTC] PHP Fatal error:  Class 'PHPParser_Lexer' not found in /home/global/public_html/asa/vendor/nikic/php-parser/lib/PHPParser/Lexer/Emulative.php on line 7

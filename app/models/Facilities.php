@@ -1,0 +1,1 @@
+<?php class Facilities extends \Eloquent{	protected $connection = 'hub_db';	protected $table = "facilities";	}

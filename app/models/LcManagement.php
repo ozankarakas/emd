@@ -1,0 +1,1 @@
+<?php class LcManagement extends \Eloquent{	protected $connection = 'helper_db';	protected $table = "btt_leisure_centre_management";	protected $fillable = array('s0','s1','s2','s3','s4','constraints','added_by');	public $timestamps = false;}

@@ -1,0 +1,1 @@
+<?php class HubLcs extends \Eloquent{	protected $connection = 'hub_db';	protected $table = "leisure_centres";	}

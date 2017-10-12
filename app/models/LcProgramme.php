@@ -1,0 +1,1 @@
+<?php class LcProgramme extends \Eloquent{	protected $connection = 'helper_db';	protected $table = "btt_leisure_centre_programme";	protected $primaryKey = 'id';	protected $fillable = array('data', 'added_by');	public $timestamps = false;}

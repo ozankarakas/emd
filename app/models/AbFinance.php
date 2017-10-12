@@ -1,0 +1,1 @@
+<?php class AbFinance extends \Eloquent{	protected $table = "ab_finance";	}

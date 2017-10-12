@@ -1,0 +1,1 @@
+<?php class HubOperators extends \Eloquent{	protected $connection = 'hub_db';	protected $table = "operators";	}

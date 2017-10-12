@@ -1,0 +1,6 @@
+[21-Mar-2015 20:27:53 UTC] PHP Fatal error:  Class 'Predis\PubSub\AbstractPubSubContext' not found in /home/global/public_html/asa/vendor/predis/predis/lib/Predis/PubSub/PubSubContext.php on line 26
+[21-Mar-2015 21:51:42 UTC] PHP Fatal error:  Class 'Predis\PubSub\AbstractPubSubContext' not found in /home/global/public_html/asa/vendor/predis/predis/lib/Predis/PubSub/PubSubContext.php on line 26
+[27-Mar-2015 15:06:08 UTC] PHP Fatal error:  Class 'Predis\PubSub\AbstractPubSubContext' not found in /home/global/public_html/asa/vendor/predis/predis/lib/Predis/PubSub/PubSubContext.php on line 26
+[16-Jun-2015 02:28:15 UTC] PHP Fatal error:  Class 'Predis\PubSub\AbstractPubSubContext' not found in /home/global/public_html/asa/vendor/predis/predis/lib/Predis/PubSub/PubSubContext.php on line 26
+[16-Jun-2015 09:09:33 UTC] PHP Fatal error:  Class 'Predis\PubSub\AbstractPubSubContext' not found in /home/global/public_html/asa/vendor/predis/predis/lib/Predis/PubSub/PubSubContext.php on line 26
+[04-Sep-2015 16:08:48 UTC] PHP Fatal error:  Class 'Predis\PubSub\AbstractPubSubContext' not found in /home/global/public_html/asa/vendor/predis/predis/lib/Predis/PubSub/PubSubContext.php on line 26

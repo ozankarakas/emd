@@ -1,0 +1,1 @@
+<?php class Schedule extends \Eloquent{	protected $connection = 'helper_db';	protected $table = "btt_schedule";	protected $primaryKey = 'id';	protected $fillable = array('lc_id', 'facility_id', 'name', 'start_date', 'end_date', 'type', 'added_by');	public $timestamps = false;}

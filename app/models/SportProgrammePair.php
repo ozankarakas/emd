@@ -1,0 +1,1 @@
+<?php class SportProgrammePair extends \Eloquent{	protected $connection = 'helper_db';	protected $table = "sport_programme_pair";}

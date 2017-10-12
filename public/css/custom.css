@@ -1,0 +1,531 @@
+#calendar-buttons_1 {
+    position: absolute;
+    right: 14px;
+    top: 5px;
+}
+
+#calendar-buttons_2 {
+    position: absolute;
+    right: 14px;
+    top: 5px;
+}
+
+.jarviswidget #calendar_1 {
+    margin-top: -18px;
+}
+
+.jarviswidget #calendar_2 {
+    margin-top: -18px;
+}
+
+/*EVENT CALENDAR OVERWRITE*/
+.fc-event-skin {
+	cursor: pointer; 
+}
+
+/*FORM GROUP OVERWRITE*/
+.custom_size
+{
+	width: 60px !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0; 
+}
+
+.modal_loading {
+
+	/* display: none; */
+
+	position: fixed;
+
+	z-index: 10000;
+
+	top: 0;
+
+	left: 0;
+
+	height: 100%;
+
+	width: 100%;
+
+	background: rgba(255, 255, 255, .8) url('../img/ajax-loader.gif') 50%
+
+	50% no-repeat;
+
+	opacity: 0.80;
+
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+
+	overflow: hidden;
+
+}
+
+
+
+.margin-top-05 { margin-top: 0.5em; }
+
+.margin-top-10 { margin-top: 1.0em; }
+
+.margin-top-15 { margin-top: 1.5em; }
+
+.margin-top-20 { margin-top: 2.0em; }
+
+.margin-top-25 { margin-top: 2.5em; }
+
+.margin-top-30 { margin-top: 3.0em; }
+
+
+
+.jarviswidget-color-blue > header 
+
+{
+
+	border-color: #006BA3 !important;
+
+	background: #006BA3;
+
+	color: #FFF;
+
+}
+
+
+
+.legend-color-blue 
+
+{
+
+	color: #006BA3 !important;
+
+	border-bottom: 1px dashed rgba(0, 107, 163, .8) !important;
+
+}
+
+
+
+.jarviswidget-color-green > header 
+
+{
+
+	border-color: #00833F !important;
+
+	background: #00833F;
+
+	color: #FFF;
+
+}
+
+
+
+.legend-color-green 
+
+{
+
+	color: #00833F !important;
+
+	border-bottom: 1px dashed rgba(0, 131, 63, .8) !important;
+
+}
+
+
+
+.modal-title-green {
+
+	margin: 0;
+
+	line-height: 1.42857143;
+
+	color: #00833F !important;
+
+}
+
+
+
+.modal-title-black {
+
+	margin: 0;
+
+	line-height: 1.42857143;
+
+	color: #000000 !important;
+
+}
+
+
+
+.jarviswidget-color-red > header 
+
+{
+
+	border-color: #DB1A35 !important;
+
+	background: #DB1A35;
+
+	color: #FFF;
+
+}
+
+
+
+.legend-color-red 
+
+{
+
+	color: #DB1A35 !important;
+
+	border-bottom: 1px dashed rgba(219, 26, 53, .8) !important;
+
+}
+
+
+
+.jarviswidget-color-yellow > header 
+
+{
+
+	border-color: #FBC606 !important;
+
+	background: #FBC606;
+
+	color: #FFF;
+
+}
+
+
+
+.legend-color-black 
+
+{
+
+	color: #000000 !important;
+
+	border-bottom: 1px dashed rgba(0, 0, 0, .8) !important;
+
+}
+
+
+
+.blue_box {
+
+	background: #006BA3;
+
+	max-height: 31px;
+
+	min-height: 31px;
+
+}
+
+
+
+.green_box {
+
+	background: #00833F;
+
+	max-height: 31px;
+
+	min-height: 31px;
+
+}
+
+
+
+.red_box {
+
+	background: #DB1A35;
+
+	max-height: 31px;
+
+	min-height: 31px;
+
+}
+
+
+
+.yellow_box {
+
+	background: #FBC606;
+
+	max-height: 31px;
+
+	min-height: 31px;
+
+}
+
+
+
+.table tbody tr.highlight td {
+
+	background-color: black;
+
+	color: white;
+
+}
+
+.table tfoot tr td {
+
+	background-color: black;
+
+	color: white;
+
+}
+
+
+.blue_fa {
+
+	color: blue;
+
+}
+
+.green_fa {
+
+	color: green;
+
+}
+
+
+
+.red_fa {
+
+	color: red;
+
+}
+
+
+
+.yellow_fa {
+
+	color: yellow;
+
+}
+
+
+.bootstrapWizard li {
+
+	width: 16.66% !important;
+
+}
+
+
+
+table>tbody>tr>td 
+
+{
+
+	vertical-align: middle !important; 
+
+}
+
+
+
+h3
+
+{
+
+	margin-bottom: 0px;
+
+}
+
+
+
+.dataTables_filter {
+
+	float: none;
+
+}
+
+
+
+.dataTables_length{
+
+	margin-right: 5px;
+
+}
+
+
+
+.easy-pie-title 
+
+{
+
+	width: 200px;
+
+	overflow: visible;
+
+}
+
+
+
+.smaller-stat 
+
+{
+
+	margin: 30px 0 0 0;
+
+	font-weight: 600;
+
+}
+
+
+
+.show-stat-microcharts>div 
+
+{
+
+	overflow: visible;
+
+}
+
+
+
+.col-xs-5ths,
+
+.col-sm-5ths,
+
+.col-md-5ths,
+
+.col-lg-5ths {
+
+	position: relative;
+
+	min-height: 1px;
+
+	padding-right: 10px;
+
+	padding-left: 10px;
+
+}
+
+
+
+.col-xs-5ths {
+
+	width: 20%;
+
+	float: left;
+
+}
+
+@media (min-width: 768px) {
+
+	.col-sm-5ths {
+
+		width: 20%;
+
+		float: left;
+
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	.col-md-5ths {
+
+		width: 20%;
+
+		float: left;
+
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.col-lg-5ths {
+
+		width: 20%;
+
+		float: left;
+
+	}
+
+}
+
+
+
+.table-striped tbody tr.highlight_c td {
+
+	background-color: black;
+
+	color: white;
+
+}
+
+
+
+/*
+
+OZAN CUSTOM CSS
+
+*/
+
+
+
+.custom_well {
+
+	opacity: 0.75;
+
+	border-radius: 50%;
+
+}
+
+
+
+.top_logo {
+
+	max-width:100%;
+
+	height:auto;
+
+	border: none;
+
+	display: block;
+
+	margin: 0 auto;
+
+}
+
+
+
+.login-button {
+
+	opacity: 0.9;
+
+	border-radius: 10%;
+
+}
+
+
+
+.arvo {
+
+	font-family: 'Arvo', serif;
+
+}
+
+
+
+#data_table_1 .hide_me
+
+{
+
+	display:none;
+
+}
+/*
+* MAPS
+*/
+.control-zinfo {
+	width: 26px;
+	height: 26px;
+	background-position: 50% 50%;
+	display: block;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
+	display: table-cell;
+	vertical-align: middle;
+	text-align:center;
+}
+

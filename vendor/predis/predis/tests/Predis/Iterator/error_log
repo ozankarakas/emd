@@ -1,0 +1,14 @@
+[15-Mar-2015 22:41:29 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseSimpleTest.php on line 21
+[15-Mar-2015 22:44:52 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseTupleTest.php on line 21
+[22-Mar-2015 16:34:04 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseSimpleTest.php on line 21
+[22-Mar-2015 17:12:37 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseSimpleTest.php on line 21
+[27-Mar-2015 05:34:38 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseTupleTest.php on line 21
+[27-Mar-2015 07:22:13 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseTupleTest.php on line 21
+[27-Mar-2015 16:09:39 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseSimpleTest.php on line 21
+[27-Mar-2015 16:09:41 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseTupleTest.php on line 21
+[16-Jun-2015 02:32:47 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseSimpleTest.php on line 21
+[16-Jun-2015 02:32:49 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseTupleTest.php on line 21
+[16-Jun-2015 09:14:05 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseSimpleTest.php on line 21
+[16-Jun-2015 09:14:08 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseTupleTest.php on line 21
+[04-Sep-2015 18:12:08 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseSimpleTest.php on line 21
+[04-Sep-2015 18:12:16 UTC] PHP Fatal error:  Class 'PredisTestCase' not found in /home/global/public_html/asa/vendor/predis/predis/tests/Predis/Iterator/MultiBulkResponseTupleTest.php on line 21
