@@ -86,17 +86,17 @@ class Helper {
 
 				],
 
-				[
+				// [
 
-				'title' 	=> 'Operational View',
+				// 'title' 	=> 'Operational View',
 
-				'link'  	=> URL::action('passport'),
+				// 'link'  	=> URL::action('passport'),
 
-				'icon'  	=> 'fa-book',
+				// 'icon'  	=> 'fa-book',
 
-				'index'		=> false,
+				// 'index'		=> false,
 
-				],
+				// ],
 
 				[
 

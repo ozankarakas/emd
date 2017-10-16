@@ -1510,6 +1510,11 @@ class GeneralFunctions
 
                 {
 
+                    // if ($value->pmi_op_id == '19') 
+                    // {
+                    //     continue;
+                    // }
+
                     ?>
 
                     <option value="<?php echo $location; ?>"<?php echo $l == $location ? ' selected="selected"' : '';?>><?php echo $value ?></option>
@@ -1557,6 +1562,10 @@ class GeneralFunctions
                 foreach ($regions as $location => $value)
 
                 {
+                    // if ($value->pmi_op_id == '19') 
+                    // {
+                    //     continue;
+                    // }
 
                     ?>
 
@@ -1607,6 +1616,11 @@ class GeneralFunctions
                 foreach ($operators as $location => $value)
 
                 {
+
+                    if ($location == '19') 
+                    {
+                        continue;
+                    }
 
                     if($GLOBALS['demo'])
 
@@ -1686,7 +1700,7 @@ class GeneralFunctions
 
             {
 
-                $lcs_ = Facilities::where('facility_type','Studio')->where('pmi_op_id', Auth::user()->account)->groupBy('site_id')->orderBy('site_name')->get();
+                $lcs_ = Facilities::where('facility_type','Studio')->where('pmi_op_id', Auth::user()->account)->where('pmi_op_id', '<>', 19)->groupBy('site_id')->orderBy('site_name')->get();
 
             }   
 
@@ -1695,6 +1709,7 @@ class GeneralFunctions
             {
 
                 $lcs_ = Facilities::where('facility_type','Studio')->where('pmi_site_id','<>','')->groupBy('site_id')->orderBy('site_name')->get();
+                // var_dump('expression');
 
             }
 
@@ -1713,6 +1728,10 @@ class GeneralFunctions
                 foreach ($lcs_ as $location)
 
                 {
+                    if ($location->pmi_op_id == '19') 
+                    {
+                        continue;
+                    }
 
                     if($GLOBALS['demo'])
 

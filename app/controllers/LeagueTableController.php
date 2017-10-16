@@ -249,7 +249,7 @@ class LeagueTableController extends BaseController {
 
 													$ytd_growth = number_format(($data[$siteIDs[$i]][$dates[2]] / $data_last[$siteIDs[$i]] * 100) - 100,0,"","");
 
-													if(!isset($data_last[$siteIDs[$i]]) || $data_last[$siteIDs[$i]] == 0) 
+													if(!isset($data_last[$siteIDs[$i]]) || $data_last[$siteIDs[$i]] == 0 || $ytd_growth > 250) 
 
 													{
 
@@ -260,6 +260,7 @@ class LeagueTableController extends BaseController {
 													else
 
 													{
+
 
 														if($ytd_growth > 0)
 
