@@ -924,6 +924,7 @@ class ActivityBarometerController extends BaseController
 		// $sector_rv = array_sum($sector_hc_) / array_sum($area);
 		$sector_rv = array_sum($sector_hc_) / 1;
 		$sites = SiteName::wherein('id',$sites_)->lists('id','name');
+		$gll_sites = SiteName::wherein('id',$sites_)->where('operator_id', 19)->lists('id','name');
 		//Frequency
 		foreach ($freq as $value) 
 		{
@@ -1029,7 +1030,7 @@ class ActivityBarometerController extends BaseController
 
 		}
 
-		return View::make('pages.activity-barometer.ajax.graphBubble', compact('sites','sites_hc','sites_rv','sector_hc','sector_rv','frequency','consistency','end_date','start_date'));
+		return View::make('pages.activity-barometer.ajax.graphBubble', compact('sites', 'gll_sites', 'sites_hc','sites_rv','sector_hc','sector_rv','frequency','consistency','end_date','start_date'));
 
 	}
 

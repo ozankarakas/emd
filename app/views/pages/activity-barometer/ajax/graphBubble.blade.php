@@ -666,6 +666,7 @@ $('#graph1').highcharts({
 	<?php
 
 	$counter = 1;
+	$gll_counter = 1;
 
 	foreach ($sites as $key => $value) 
 
@@ -677,6 +678,13 @@ $('#graph1').highcharts({
 
 			$key = "Demo Leisure Centre ".$counter;
 
+		}
+		else
+		{
+			if (in_array($value, $gll_sites)) {
+				$key = "Others ".$gll_counter;
+				$gll_counter++;
+			}
 		}
 
 		?>

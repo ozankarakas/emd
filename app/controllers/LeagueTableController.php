@@ -385,12 +385,25 @@ class LeagueTableController extends BaseController {
 													if($sg != "-")
 
 													{
+														if ($operator_name == "GLL") 
+														{
+															?>
 
-														?>
+														style="cursor: pointer;" onclick='displayResult("<?php echo $second_ranks[$siteIDs[$i]]; ?>","<?php echo $dates[2]; ?>","<?php echo $second_growth[$siteIDs[$i]]; ?>","OTHER SITE","<?php echo $siteIDs[$i]; ?>", "<?php echo $results[$i]->operator_id;?>")'
+
+														<?php
+														}
+
+														else
+														{
+															?>
 
 														style="cursor: pointer;" onclick='displayResult("<?php echo $second_ranks[$siteIDs[$i]]; ?>","<?php echo $dates[2]; ?>","<?php echo $second_growth[$siteIDs[$i]]; ?>","<?php echo $site->name; ?>","<?php echo $siteIDs[$i]; ?>", "<?php echo $results[$i]->operator_id;?>")'
 
 														<?php
+														}
+
+														
 
 													}
 
@@ -414,7 +427,16 @@ class LeagueTableController extends BaseController {
 
 													>
 
-													<td><?php echo $site->name;?></td>
+													<td><?php 
+													$operator_name = Operators::find($site->operator_id)->name;
+													if ($operator_name == 'GLL') {
+														echo 'Other Site';
+													}
+													else
+													{
+														echo $site->name;
+													}
+													?></td>
 
 													<td><?php 
 
@@ -430,7 +452,7 @@ class LeagueTableController extends BaseController {
 
 														{
 
-															echo Operators::find($site->operator_id)->name;
+															echo $operator_name;
 
 														}
 
@@ -485,7 +507,7 @@ class LeagueTableController extends BaseController {
 								<p><i class="fa-fw fa fa-info"></i><strong>Info!</strong> Please click on a leisure centre row to display site specific quartile analysis in the graph below.</p>
 
 							</div>
-
+							<?php $gll_sites = SiteName::wherein('id',$sites_)->where('operator_id', 19)->lists('id','name'); ?>
 							<div class="show-stat-microcharts" style="min-height: 90px;">
 
 								<div class="col-md-12 col-lg-4" style='height: 80px'>
@@ -494,7 +516,17 @@ class LeagueTableController extends BaseController {
 
 									<br>										
 
-									<span class="easy-pie-title" style='font-size: 16px; margin-left: 30px;'><?php echo array_search(max($gaps), $gaps);?></span>											
+									<span class="easy-pie-title" style='font-size: 16px; margin-left: 30px;'><?php
+
+									if (in_array(array_search(max($gaps), $gaps), $gll_sites)) {
+										echo 'OTHER SITE';
+									}
+									else
+									{
+
+									 echo array_search(max($gaps), $gaps);										
+									}
+									?></span>	
 
 								</div>
 
