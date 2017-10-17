@@ -408,7 +408,7 @@ class QueryCacher {
 
 		$lcs[0] = 0;
 
-
+		
 
 		$sport = Auth::user()->sport;
 
@@ -421,6 +421,7 @@ class QueryCacher {
 		->whereBetween('DateOfBooking', array($start_date, $end_date))
 
 		->customFilters($person_type,$gender,$age,$programme,$lcs)
+		// ->customFilters($person_type,$gender,$age,$programme)
 
 		->groupBy('SiteID', DB::raw("month(`DateOfBooking`), year(`DateOfBooking`)"))
 
@@ -439,6 +440,8 @@ class QueryCacher {
 		->whereBetween('DateOfBooking', array($start_date_last, $end_date_last))
 
 		->customFilters($person_type,$gender,$age,$programme,$lcs)
+
+		// ->customFilters($person_type,$gender,$age,$programme)
 
 		->groupBy('SiteID')
 

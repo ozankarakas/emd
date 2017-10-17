@@ -424,6 +424,13 @@ class LeagueTableController extends BaseController {
 
 													$fgs[$site->name] = $first_growth[$siteIDs[$i]];
 
+													if ($first_growth[$siteIDs[$i]] < 250) 
+													{
+														$fgs_less_than_250[$site->name] = $first_growth[$siteIDs[$i]];
+
+														$sgs_less_than_250[$site->name] = $second_growth[$siteIDs[$i]];
+													}
+
 													?>
 
 													>
@@ -533,21 +540,21 @@ class LeagueTableController extends BaseController {
 
 								<div class="col-md-12 col-lg-4" style='height: 80px'>
 
-									<span style='font-weight: bold; margin-left: 15px;'>Max Growth in <?php echo $dates[1]?><span style="margin-left: 5%; font-weight: bold; font-size: 20px; color: green;" class=''><i class="fa fa-chevron-up green_fa"></i><?php echo max($fgs);?> %</span>	</span>
+									<span style='font-weight: bold; margin-left: 15px;'>Max Growth in <?php echo $dates[1]?><span style="margin-left: 5%; font-weight: bold; font-size: 20px; color: green;" class=''><i class="fa fa-chevron-up green_fa"></i><?php echo max($fgs_less_than_250);?> %</span>	</span>
 
 									<br>
 
-									<span class="easy-pie-title" style='font-size: 16px; margin-left: 30px;'><?php echo array_search(max($fgs), $fgs);?></span>																			
+									<span class="easy-pie-title" style='font-size: 16px; margin-left: 30px;'><?php echo array_search(max($fgs_less_than_250), $fgs_less_than_250);?></span>																			
 
 								</div>
 
 								<div class="col-md-12 col-lg-4" style='height: 80px'>
 
-									<span style='font-weight: bold; margin-left: 15px;'>Max Growth in <?php echo $dates[2]?><span style="margin-left: 5%; font-weight: bold; font-size: 20px; color: green;" class=''><i class="fa fa-chevron-up green_fa"></i><?php echo max($sgs);?> %</span>	</span>
+									<span style='font-weight: bold; margin-left: 15px;'>Max Growth in <?php echo $dates[2]?><span style="margin-left: 5%; font-weight: bold; font-size: 20px; color: green;" class=''><i class="fa fa-chevron-up green_fa"></i><?php echo max($sgs_less_than_250);?> %</span>	</span>
 
 									<br>
 
-									<span class="easy-pie-title" style='font-size: 16px; margin-left: 30px;'><?php echo array_search(max($sgs), $sgs);?></span>
+									<span class="easy-pie-title" style='font-size: 16px; margin-left: 30px;'><?php echo array_search(max($sgs_less_than_250), $sgs_less_than_250);?></span>
 
 								</div>
 
