@@ -1253,8 +1253,8 @@ class GeneralFunctions
 
 
 
-        $location_ = DB::table('f_location')->get();
-
+        // $location_ = DB::table('f_location')->get();
+        $location_ = DB::table('f_location')->where('id', '<>', 4)->get();
         ?>
 
         <label><b>Location</b></label>
