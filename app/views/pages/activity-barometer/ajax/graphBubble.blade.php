@@ -18,7 +18,7 @@
 
 			<div class="alert alert-info">
 
-				No of members swimming in each frequency (<?php echo date("M Y", strtotime($end_date)); ?>)
+				No of members attending a group workout activity in each frequency (<?php echo date("M Y", strtotime($end_date)); ?>)
 
 			</div>
 
@@ -54,7 +54,7 @@
 
 			<div class="alert alert-info">
 
-				No of members swimming consistently for the last 3 months (<?php echo date("M", strtotime($start_date))." to ".date("M Y", strtotime($end_date)); ?>)
+				No of members attending a group workout activity consistently for the last 3 months (<?php echo date("M", strtotime($start_date))." to ".date("M Y", strtotime($end_date)); ?>)
 
 			</div>
 
