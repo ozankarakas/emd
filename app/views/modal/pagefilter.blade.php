@@ -288,27 +288,27 @@ $data = json_decode($data, true);
 
 		//NO OF SITES
 
-		if($("#filter" + filter_id + " input[name='no_of_sites']:checked").length==0)
+		// if($("#filter" + filter_id + " input[name='no_of_sites']:checked").length==0)
 
-		{
+		// {
 
-			$.smallBox({
+		// 	$.smallBox({
 
-				title : "Validation",
+		// 		title : "Validation",
 
-				content : "<i class='fa fa-clock-o'></i> <i>Please select no of sites.</i>",
+		// 		content : "<i class='fa fa-clock-o'></i> <i>Please select no of sites.</i>",
 
-				color : "#C46A69",
+		// 		color : "#C46A69",
 
-				iconSmall : "fa fa-times fa-2x bounce animated",
+		// 		iconSmall : "fa fa-times fa-2x bounce animated",
 
-				timeout : 4000
+		// 		timeout : 4000
 
-			});
+		// 	});
 
-			return;
+		// 	return;
 
-		}
+		// }
 
 
 
