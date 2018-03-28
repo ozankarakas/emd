@@ -2689,9 +2689,9 @@ $(window).on('resize', function(){
 
 <?php
 
-$time_post1 = microtime(true);
-            $exec_time1 = number_format($time_post1 - $time_pre1, 0);
-            echo "Total time: ".$exec_time1.PHP_EOL;
+// $time_post1 = microtime(true);
+//             $exec_time1 = number_format($time_post1 - $time_pre1, 0);
+//             echo "Total time: ".$exec_time1.PHP_EOL;
 
 }
 

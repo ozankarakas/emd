@@ -382,6 +382,7 @@ class LeagueTableController extends BaseController {
 													<tr
 
 													<?php
+													$operator_name = Operators::find($site->operator_id)->name;
 
 													if($sg != "-")
 
@@ -436,7 +437,7 @@ class LeagueTableController extends BaseController {
 													>
 
 													<td><?php 
-													$operator_name = Operators::find($site->operator_id)->name;
+													
 													if ($operator_name == 'GLL') {
 														echo 'Other Site';
 													}
@@ -699,9 +700,12 @@ class LeagueTableController extends BaseController {
 
 		$siteID = Input::get('siteID');
 
-		$siteName = Input::get('siteName');
+		
 
 		$op_id = Input::get('op_id');
+
+		$siteName = Input::get('siteName');
+		
 
 		$values = json_decode(Input::get('values'),true);
 		$sites = json_decode(Input::get('sites'),true);
