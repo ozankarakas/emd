@@ -434,10 +434,12 @@ class ActivityBarometerController extends BaseController
 
 		$model = "DataRaw".$sport;
 
+		$date = date('Y-m-d', strtotime('01-'.$date));
 		$start_date = date('Y-m-01 00:00:00', strtotime($date));
 
 		$end_date = date('Y-m-t 23:59:59', strtotime($date));
 
+		
 		// $end_date = $values['date_end_current'];
 
 		// $start_date = date_create($end_date.' last day of -2 month')->format('Y-m-01 00:00:00');
@@ -446,7 +448,6 @@ class ActivityBarometerController extends BaseController
 		$start_date_prev_three_months = date('Y-m-01 00:00:00', strtotime($date.' -1 month'));
 
 		$end_date_prev_three_months = date('Y-m-t 23:59:59', strtotime($date.' -1 month'));
-
 
 
 
@@ -462,12 +463,15 @@ class ActivityBarometerController extends BaseController
 
 		->groupBy(DB::raw("month(DateOfBooking)"))
 
-		->rememberForever()
+		// ->rememberForever()
+		// 
+		->remember(1440)
 
 		->lists('MemberID');
 
 
-
+		// print_r($unique_members);
+		// echo '<br>';
 		$table_data['unique_member_count'] = count($unique_members);
 
 
@@ -484,6 +488,7 @@ class ActivityBarometerController extends BaseController
 		// ->groupBy(DB::raw("month(DateOfBooking)"))
 
 		->rememberForever()
+		// ->remember(1440)
 
 		->orderBy('MemberID')
 
@@ -503,6 +508,8 @@ class ActivityBarometerController extends BaseController
 		// ->groupBy(DB::raw("month(DateOfBooking)"))
 
 		->rememberForever()
+		// 
+		// ->remember(1440)
 
 		->orderBy('MemberID')
 
@@ -523,6 +530,8 @@ class ActivityBarometerController extends BaseController
 		// ->groupBy(DB::raw("month(DateOfBooking)"))
 
 		// ->rememberForever()
+		// 
+		// ->remember(1440)
 
 		// ->orderBy('MemberID')
 
@@ -585,6 +594,8 @@ class ActivityBarometerController extends BaseController
 		// ->groupBy('TemplateName', 'MemberID')
 
 		// ->rememberForever()
+		// 
+		// ->remember(1440)
 
 		// ->get();
 
@@ -616,6 +627,8 @@ class ActivityBarometerController extends BaseController
 
 		->groupBy('MemberID')
 
+		// ->remember(1440)
+
 		->rememberForever()
 
 		->lists('MemberID');
@@ -635,6 +648,8 @@ class ActivityBarometerController extends BaseController
 
 		->groupBy('TemplateName')
 
+		// ->remember(1440)
+
 		->rememberForever()
 
 		->lists('member_count', 'TemplateName');
@@ -653,7 +668,7 @@ class ActivityBarometerController extends BaseController
 
 
 		$demo = Auth::user()->demo;
-
+		
 		return View::make('pages.activity-barometer.ajax.tableOperations', 
 
 			compact(
